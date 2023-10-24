@@ -1,0 +1,20 @@
+---
+import BaseLayout from "./base.astro";
+
+// fluent-svelte css
+import "fluent-svelte/theme.css";
+---
+
+<BaseLayout>
+  <!-- Head -->
+  <Fragment slot="head">
+    <slot name="head" />
+  </Fragment>
+
+  <!-- Body -->
+  <Fragment>
+    <main>
+      <slot />
+    </main>
+  </Fragment>
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import Head from "~/components/head.astro";
+import "normalize.css/normalize.css";
+---
+
+<html lang="id">
+  <!-- Head -->
+  <Head>
+    <slot name="head" />
+  </Head>
+
+  <!-- Body -->
+  <body>
+    <slot />
+    <style lang="scss" is:global>
+      body {
+        min-height: 100vh;
+        font-family: var(--fds-font-family-text);
+      }
+    </style>
+  </body>
+</html>

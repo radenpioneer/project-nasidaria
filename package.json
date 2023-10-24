@@ -1,15 +1,26 @@
 {
   "name": "",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro": "astro",
     "build": "astro build",
+    "dev": "astro dev",
+    "format": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "pnpx npm-run-all -s build preview"
   },
   "dependencies": {
-    "astro": "^3.3.3"
+    "@astrojs/svelte": "^4.0.3",
+    "astro": "^3.3.3",
+    "fluent-svelte": "^1.6.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.69.4",
+    "svelte": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "prettier-plugin-svelte": "^3.0.3"
   }
 }
